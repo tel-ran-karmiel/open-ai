@@ -1,0 +1,13 @@
+{
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["javascript", "jsonc"],
+  "spellright.parserByClass": {
+    "javascript": {
+      "parser": "code"
+    }
+  },
+  "spellright.spellContextByClass": {
+    "javascript": "comments strings"
+  },
+  "spellright.notificationClass": "warning"
+}

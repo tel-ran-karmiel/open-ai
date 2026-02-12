@@ -6,6 +6,7 @@ export default async function chatRequest(messages) {
     model: MODEL_NAME,
     messages,
     stream: false,
+    temperature: 0.0
   };
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
