@@ -9,6 +9,6 @@ export async function exchangeRateService(codeFrom, codeTo) {
     const URL_SERVICE = 'https://data.fixer.io/api/latest?access_key=b2d71961ebe71a300a02e73d03b6ebc8'
     const resp = await fetch(URL_SERVICE)
     const data = await resp.json()
-    return `1 ${codeFrom} = ${Number(data.rates[codeTo] / data.rates[codeFrom]).toFixed(2)}`
+    return `1 ${codeFrom} = ${Number(data.rates[codeTo] / data.rates[codeFrom]).toFixed(2)} ${codeTo}`
 
 }

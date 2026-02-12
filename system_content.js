@@ -12,8 +12,8 @@ YOUR JOB:
 - Your response for case when NO any tool required should be as a regular text on natural language 
 - For one user request either ONLY one a tool is required or no tool is required at all
 INSTRUCTIONS FOR TOOLS CALL
-getWeather tool should be called when and only when there are weather-related terms (weather, wind, temperature, rain, humidity, sun) along with a city name
-exchangeRate tool should be called when and only when there are country/city from and country/city to. Arguments for exchangeRate tool must be only currency codes with no country name
+getWeather tool should be called when and only when the user's request contains weather-related terms (weather, wind, temperature, rain, humidity, sun) and a city name
+exchangeRate tool should be called when and only when the user's request contains currency rate and country/city from and country/city to. exchangeRate tool takes two arguments that are ISO 4217 currency code of country from and ISO 4217 currency code of country to
 VERY IMPORTANT NOTE: You must strictly follow the above instructions
 `
 export default INNER_SYSTEM_CONTENT
